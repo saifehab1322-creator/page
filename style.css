@@ -3,61 +3,196 @@
   padding: 0;
   box-sizing: border-box;
 }
-.heading {
-  text-align: center;
-  margin-top: 10px;
+.header {
+  background-color: gray;
 }
-.container {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  padding: 30px;
-}
-.container div {
-  text-align: center;
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px 0 wheat;
-  transition: all 2s ease;
-}
-img {
-  width: 80%;
-  border-radius: 20px;
-}
-div h3 {
-  text-align: center;
-}
-div p {
-  text-align: center;
+.header{
+
 }
 
-.container div:hover {
-  background-color: rgb(30, 1, 255);
-  width: 45%;
-  transform: translateY(-30px);
+.header ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  gap: 5%;
+  margin-right: 5%;
 }
-.container button {
-  background-color: black;
+.header ul a {
+  color: white;
+  text-decoration: none;
+}
+.header ul :hover {
+  transform: translateY(-2px);
+}
+.header ul a:hover {
+  background-color: blue;
+}
+.section {
+  background-image: url("صور امتحان عمي برمجه U10/Hero.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article {
+  width: 80%;
+  height: 70%;
+  border-radius: 20px;
+  background-color: rgb(29, 28, 28);
+  color: white;
+  opacity: 0.8;
+}
+.article h1 {
+  margin: 100px;
+}
+.article p {
+  margin: 100px;
+  margin-top: -80px;
+  margin-bottom: 150px;
+}
+.article button {
+  background-color: rgb(255, 217, 0);
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 15px;
-  color: white;
+  border-radius: 5px;
+  display: flex;
+  margin-top: -120px;
+  margin-left: 100px;
 }
-@media (max-width: 600px) {
-  body{
-  background-color: red;
-  }
+.article button a {
+  text-decoration: none;
+  color: black;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-areas: "a b c d";
+  gap: 20px;
+  margin: 20px;
+  text-align: center;
+  margin-top: 60px;
+  justify-content: center;
+}
+.heading {
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+.carda {
+  grid-area: a;
+  background-color: lightgray;
+  padding-bottom: 100px;
+  box-shadow: 0 0 15px 5px gray;
+  border-radius: 10px;
+  height: 90%;
+}
+.carda img {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+.cardb {
+  grid-area: b;
+  background-color: lightgray;
+  box-shadow: 0 0 15px 5px gray;
+  border-radius: 10px;
+  height: 90%;
+}
+.cardb img {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+.cardc {
+  grid-area: c;
+  background-color: lightgray;
+  box-shadow: 0 0 15px 5px gray;
+  border-radius: 10px;
+  height: 90%;
+}
+.cardc img {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
 }
 
-/* @keyframes rectangle {
-  from {
-    transform: rotate(0deg);
-    background-color: red;
-  }
-  to {
-    transform: rotate(360deg);
-    background-color: blue;
-  } */
+.cards:hover {
+  transform: scale(10deg);
+}
+#h {
+  margin-left: 60px;
+}
+.cardes {
+  display: flex;
+  margin-left: 14%;
+  margin-top: 30px;
+  gap: 10px;
+}
+.cardes:hover {
+    transform: rotate(30deg);
+}
+.cardd {
+  grid-area: d;
+}
+.cardd img {
+  width: 300px;
+  height: 300px;
+}
+.carde {
+  grid-area: e;
+}
+.carde img {
+  width: 300px;
+  height: 300px;
+}
+.cardf {
+  grid-area: f;
+}
+.cardf img {
+  width: 300px;
+  height: 300px;
+}
+.cardes1 {
+  display: flex;
+  margin-left: 14%;
+  margin-top: 20px;
+  gap: 10px;
+}
+.cardg {
+  grid-area: g;
+}
+.cardg img {
+  width: 300px;
+  height: 300px;
+}
+.cardh {
+  grid-area: h;
+}
+.cardh img {
+  width: 300px;
+  height: 300px;
+}
+.cardi {
+  grid-area: i;
+}
+.cardi img {
+  width: 300px;
+  height: 300px;
+}
+.cardes1:hover {
+    transform: scale(0.1);
+    transform: scale(1);
+}
+.footer{
+    background-color: antiquewhite;
+}
+.footer h1{
+    margin: 20px;
+    padding: 20px;
+}
+.footer p{
+    margin: 30px;
+    margin-top: -30px;
+}
